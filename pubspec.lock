@@ -150,14 +150,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.1.0"
-  logger:
-    dependency: "direct main"
-    description:
-      name: logger
-      sha256: be4b23575aac7ebf01f225a241eb7f6b5641eeaf43c6a8613510fc2f8cf187d1
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.5.0"
   logging:
     dependency: transitive
     description:
@@ -290,10 +282,10 @@ packages:
     dependency: "direct main"
     description:
       name: solidart
-      sha256: "2d15608b60fff6cf1ed39b4161bde03caddacf6656275d3bedeb3605edfc60e9"
+      sha256: d1cd846db91abb2c6b7854b68520036ec1aa93fdd6e2b9c5baf8e0eb8cb9299d
       url: "https://pub.dev"
     source: hosted
-    version: "1.5.4"
+    version: "2.0.0-dev.3"
   source_map_stack_trace:
     dependency: transitive
     description:

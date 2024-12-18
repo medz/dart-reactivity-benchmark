@@ -8,7 +8,7 @@ environment:
 
 dependencies:
   alien_signals: ^0.0.4
-  solidart: ^1.5.4
+  solidart: ^2.0.0-dev.3
   signals_core: ^6.0.2
   preact_signals: ^1.8.3
 
