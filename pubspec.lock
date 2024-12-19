@@ -290,10 +290,10 @@ packages:
     dependency: "direct main"
     description:
       name: solidart
-      sha256: "2d15608b60fff6cf1ed39b4161bde03caddacf6656275d3bedeb3605edfc60e9"
+      sha256: d1cd846db91abb2c6b7854b68520036ec1aa93fdd6e2b9c5baf8e0eb8cb9299d
       url: "https://pub.dev"
     source: hosted
-    version: "1.5.4"
+    version: "2.0.0-dev.3"
   source_map_stack_trace:
     dependency: transitive
     description:
