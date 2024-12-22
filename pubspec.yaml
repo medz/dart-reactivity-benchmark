@@ -7,7 +7,7 @@ environment:
   sdk: ^3.6.0
 
 dependencies:
-  alien_signals: ^0.0.6
+  alien_signals: ^0.0.8
   solidart: ^1.5.4
   signals_core: ^6.0.2
   preact_signals: ^1.8.3
