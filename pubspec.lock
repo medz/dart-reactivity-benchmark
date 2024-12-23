@@ -5,10 +5,10 @@ packages:
     dependency: "direct dev"
     description:
       name: alien_signals
-      sha256: ae58f576b14019463d5cb15026e11acfd936fe8bf76d0bf1e9f82173be939b7c
+      sha256: "18636efb4641fcb9df29ee8b065bfdd64f3582729b4b2e577e40a0cd9c8e3508"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.9"
+    version: "0.0.10"
   basic_interfaces:
     dependency: transitive
     description:
