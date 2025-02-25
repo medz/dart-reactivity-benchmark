@@ -39,6 +39,7 @@ final class _SolidartReactiveFramework extends ReactiveFramework {
 void main() {
   solidart.SolidartConfig.devToolsEnabled = false;
   solidart.SolidartConfig.trackPreviousValue = false;
+  solidart.SolidartConfig.autoDispose = false;
   solidart.SolidartConfig.equals = true;
   runFrameworkBench(const _SolidartReactiveFramework());
 }
