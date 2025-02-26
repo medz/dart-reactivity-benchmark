@@ -65,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  reactter:
+    dependency: "direct dev"
+    description:
+      name: reactter
+      sha256: "647f06d1b42e294dad1b9a9c7820344829781379e1207cedb49b3cf74db3873c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "8.0.0"
   riverpod:
     dependency: "direct dev"
     description:
