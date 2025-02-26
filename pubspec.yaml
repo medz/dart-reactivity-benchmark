@@ -11,7 +11,7 @@ environment:
 
 dev_dependencies:
   lints: ^5.0.0
-  alien_signals: ^0.2.0
+  alien_signals: ^0.2.4
   solidart: ^2.0.0-dev.5
   signals_core: ^6.0.2
   preact_signals: ^1.8.3
