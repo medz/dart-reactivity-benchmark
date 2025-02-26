@@ -5,7 +5,8 @@ import 'package:reactivity_benchmark/utils/create_computed.dart';
 import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 final class _StateBeaconReactiveFramework extends ReactiveFramework {
-  const _StateBeaconReactiveFramework() : super('state_beacon');
+  const _StateBeaconReactiveFramework()
+      : super('[state_beacon](https://github.com/jinyus/dart_beacon)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {

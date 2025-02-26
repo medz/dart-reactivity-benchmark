@@ -5,7 +5,8 @@ import 'package:reactivity_benchmark/utils/create_computed.dart';
 import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 final class _SignalsReactiveFramework extends ReactiveFramework {
-  const _SignalsReactiveFramework() : super('signals');
+  const _SignalsReactiveFramework()
+      : super('[signals](https://github.com/rodydavis/signals.dart)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {

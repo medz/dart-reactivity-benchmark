@@ -10,7 +10,8 @@ import 'package:reactivity_benchmark/utils/create_computed.dart';
 import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 class RiverpodReactiveFramework extends ReactiveFramework {
-  RiverpodReactiveFramework(this.root) : super('riverpod');
+  RiverpodReactiveFramework(this.root)
+      : super('[riverpod](https://github.com/rrousselGit/riverpod)');
 
   final riverpod.ProviderContainer root;
   riverpod.Ref? ref;

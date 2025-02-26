@@ -5,7 +5,7 @@ import 'package:reactivity_benchmark/utils/create_computed.dart';
 import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 final class MobxFramework extends ReactiveFramework {
-  const MobxFramework() : super('mobx');
+  const MobxFramework() : super('[mobx](https://github.com/mobxjs/mobx.dart)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {

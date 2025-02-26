@@ -5,7 +5,8 @@ import 'package:reactivity_benchmark/utils/create_computed.dart';
 import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 final class _AlientSignalsReactiveFramework extends ReactiveFramework {
-  const _AlientSignalsReactiveFramework() : super('alien_signals');
+  const _AlientSignalsReactiveFramework()
+      : super('[alien_signals](https://github.com/medz/alien-signals-dart)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {
