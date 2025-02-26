@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.5.0"
+  path:
+    dependency: transitive
+    description:
+      name: path
+      sha256: "75cca69d1490965be98c73ceaea117e8a04dd21217b37b292c9ddbec0d955bc5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.9.1"
   preact_signals:
     dependency: "direct dev"
     description:
@@ -57,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  riverpod:
+    dependency: "direct dev"
+    description:
+      name: riverpod
+      sha256: "59062512288d3056b2321804332a13ffdd1bf16df70dcc8e506e411280a72959"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.6.1"
   signals_core:
     dependency: "direct dev"
     description:
@@ -73,11 +89,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0-dev.5"
+  stack_trace:
+    dependency: transitive
+    description:
+      name: stack_trace
+      sha256: "8b27215b45d22309b5cddda1aa2b19bdfec9df0e765f2de506401c071d38d1b1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.12.1"
   state_beacon_core:
     dependency: "direct dev"
     description:
       name: state_beacon_core
       sha256: c109a5fee4b93f1cf2fcb2e6ea9c74285654e3e8799eb6e33c69581807214f94
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+  state_notifier:
+    dependency: transitive
+    description:
+      name: state_notifier
+      sha256: b8677376aa54f2d7c58280d5a007f9e8774f1968d1fb1c096adcb4792fba29bb
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"

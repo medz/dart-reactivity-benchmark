@@ -17,3 +17,4 @@ dev_dependencies:
   preact_signals: ^1.8.3
   state_beacon_core: ^1.0.0
   mobx: ^2.5.0
+  riverpod: ^2.6.1
