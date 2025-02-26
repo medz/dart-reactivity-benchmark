@@ -116,11 +116,8 @@ double calculateCoefficient(String testCase) {
   if (testCase.contains('(fail)')) return 0.0;
 
   double coefficient = 1.0;
-  if (testCase.contains('sum: fail')) coefficient *= 0.5;
-  if (testCase.contains('count: fail')) coefficient *= 0.5;
-  if (testCase.contains('sum: fail') && testCase.contains('count: fail')) {
-    coefficient = 0.0;
-  }
+  if (testCase.contains('sum: fail')) coefficient -= 0.5;
+  if (testCase.contains('count: fail')) coefficient -= 0.5;
 
   return coefficient;
 }
@@ -189,14 +186,14 @@ Map<String, ScoreResult> calculateScores(
     Map<String, Map<String, ({String stateCaseName, int microseconds})>>
         reports) {
   final scores = <String, ScoreResult>{};
-  final testWeights = defineTestWeights();
   Duration? fastestTotalTime;
 
   // First pass to find fastest total time
   for (final framework in reports.values.first.keys) {
     var totalTime = Duration.zero;
     for (final group in reports.values) {
-      final test = group[framework]!;
+      final test = group[framework];
+      if (test == null) continue;
       totalTime += Duration(microseconds: test.microseconds);
     }
 
@@ -213,13 +210,14 @@ Map<String, ScoreResult> calculateScores(
     var totalTime = Duration.zero;
 
     for (final MapEntry(key: testCase, value: group) in reports.entries) {
-      final test = group[framework]!;
+      final test = group[framework];
       totalTests++;
+      if (test == null) continue;
 
       final baseline = calculateBaseline(group);
       final coefficient = calculateCoefficient(test.stateCaseName);
-      final normalizedScore = calculateNormalizedScore(test.microseconds,
-          baseline, coefficient, testWeights[testCase] ?? 1.0);
+      final normalizedScore =
+          calculateNormalizedScore(test.microseconds, baseline, coefficient);
 
       testMetrics[testCase] = TestMetric(
         microseconds: test.microseconds,
@@ -266,20 +264,9 @@ double calculateNormalizedScore(
   int microseconds,
   int baseline,
   double coefficient,
-  double weight,
 ) {
   final baseScore = baseline / microseconds;
-  return baseScore * coefficient * weight;
-}
-
-Map<String, double> defineTestWeights() {
-  return {
-    'Simple Counter': 1.0,
-    'Computed Properties': 1.2,
-    'Collection Operations': 1.3,
-    'Deep Update': 1.4,
-    'Complex Update': 1.5,
-  };
+  return baseScore * coefficient;
 }
 
 void generateRankingReport(Map<String, ScoreResult> scores) {
