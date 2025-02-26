@@ -10,8 +10,15 @@ if [ ${#frameworks[@]} -eq 0 ]; then
   exit 1
 fi
 
+skipFramework=("reactter" "mobx" "riverpod");
+
 for framework in "${frameworks[@]}"
 do
+    if [[ " ${skipFramework[*]} " =~ " $framework " ]]; then
+      echo "Skipping $framework as it's in the skip list"
+      continue
+    fi
+
   echo "==================== $framework ===================="
   echo "$(date)"
 
