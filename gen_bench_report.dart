@@ -13,14 +13,14 @@ Future<void> main() async {
   generateRankingReport(ranks);
 }
 
-class ScoreResult {
+class RankResult {
   final String framework;
   final double successRate;
   final int totalTests;
   final int passedTests;
   final Duration totalTime;
 
-  ScoreResult({
+  RankResult({
     required this.framework,
     required this.successRate,
     required this.totalTests,
@@ -29,24 +29,14 @@ class ScoreResult {
   });
 }
 
-class TestMetric {
-  final int microseconds;
-  final double coefficient;
-  final String status;
-
-  TestMetric({
-    required this.microseconds,
-    required this.coefficient,
-    required this.status,
-  });
-}
-
 Map<String, Map<String, ({String stateCaseName, int microseconds})>>
     readAllBenchmarkReports() {
   final reports = <String, Map<String, int>>{};
   final benchReportDir = Directory('bench');
+  final files = benchReportDir.listSync()
+    ..sort((a, b) => a.path.compareTo(b.path));
 
-  for (final file in benchReportDir.listSync()) {
+  for (final file in files) {
     if (file is! File) continue;
     final lines = file.readAsLinesSync().skip(2);
     for (final line in lines) {
@@ -167,43 +157,35 @@ String trimTestCaseName(String name) {
   return name;
 }
 
-Map<String, ScoreResult> calculateRank(
+Map<String, RankResult> calculateRank(
     Map<String, Map<String, ({String stateCaseName, int microseconds})>>
         reports) {
-  final results = <String, ScoreResult>{};
+  final results = <String, RankResult>{};
 
   // Second pass to calculate scores
   for (final framework in reports.values.first.keys) {
-    var testMetrics = <String, TestMetric>{};
     var totalTests = 0;
     var passedTests = 0;
     var totalTime = Duration.zero;
 
-    for (final MapEntry(key: testCase, value: group) in reports.entries) {
+    for (final MapEntry(value: group) in reports.entries) {
       final test = group[framework];
       totalTests++;
       if (test == null) continue;
 
       final coefficient = calculateCoefficient(test.stateCaseName);
-
-      testMetrics[testCase] = TestMetric(
-        microseconds: test.microseconds,
-        coefficient: coefficient,
-        status: getTestStatus(coefficient),
-      );
-
       if (coefficient >= 1.0) passedTests++;
+
       totalTime += Duration(microseconds: test.microseconds);
     }
 
     final successRate = passedTests / totalTests;
 
-    results[framework] = ScoreResult(
+    results[framework] = RankResult(
       framework: framework,
       successRate: successRate,
       totalTests: totalTests,
       passedTests: passedTests,
-      testMetrics: testMetrics,
       totalTime: totalTime,
     );
   }
@@ -211,7 +193,7 @@ Map<String, ScoreResult> calculateRank(
   return results;
 }
 
-void generateRankingReport(Map<String, ScoreResult> scores) {
+void generateRankingReport(Map<String, RankResult> scores) {
   final rankTable = StringBuffer();
   rankTable.writeln('| Rank | Framework | Success Rate | Tests | Time |');
   rankTable.writeln('|------|-----------|--------------|-------|------|');

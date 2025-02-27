@@ -10,7 +10,7 @@ if [ ${#frameworks[@]} -eq 0 ]; then
   exit 1
 fi
 
-skipFramework=("reactter" "mobx" "riverpod");
+skipFramework=("reactter");
 
 for framework in "${frameworks[@]}"
 do
