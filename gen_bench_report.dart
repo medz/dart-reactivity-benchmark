@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math' show pow, sqrt;
 
 Future<void> main() async {
   final reports = readAllBenchmarkReports();
@@ -7,42 +6,36 @@ Future<void> main() async {
   // 1. Generate detailed test case table
   generateTestCaseTable(reports);
 
-  // 2. Calculate overall scores
-  final scores = calculateScores(reports);
+  // 2. Calculate overall rank
+  final ranks = calculateRank(reports);
 
   // 3. Generate ranking report
-  generateRankingReport(scores);
+  generateRankingReport(ranks);
 }
 
 class ScoreResult {
   final String framework;
-  final double overallScore;
   final double successRate;
   final int totalTests;
   final int passedTests;
-  final Map<String, TestMetric> testMetrics;
   final Duration totalTime;
 
   ScoreResult({
     required this.framework,
-    required this.overallScore,
     required this.successRate,
     required this.totalTests,
     required this.passedTests,
-    required this.testMetrics,
     required this.totalTime,
   });
 }
 
 class TestMetric {
   final int microseconds;
-  final double normalizedScore;
   final double coefficient;
   final String status;
 
   TestMetric({
     required this.microseconds,
-    required this.normalizedScore,
     required this.coefficient,
     required this.status,
   });
@@ -102,14 +95,6 @@ void generateTestCaseTable(
   }
 
   updateReadme(testCaseTable.toString(), 'test-case');
-}
-
-int calculateBaseline(
-    Map<String, ({String stateCaseName, int microseconds})> group) {
-  return group.values
-      .where((test) => calculateCoefficient(test.stateCaseName) >= 0.5)
-      .map((test) => test.microseconds)
-      .reduce((min, time) => time < min ? time : min);
 }
 
 double calculateCoefficient(String testCase) {
@@ -182,25 +167,10 @@ String trimTestCaseName(String name) {
   return name;
 }
 
-Map<String, ScoreResult> calculateScores(
+Map<String, ScoreResult> calculateRank(
     Map<String, Map<String, ({String stateCaseName, int microseconds})>>
         reports) {
-  final scores = <String, ScoreResult>{};
-  Duration? fastestTotalTime;
-
-  // First pass to find fastest total time
-  for (final framework in reports.values.first.keys) {
-    var totalTime = Duration.zero;
-    for (final group in reports.values) {
-      final test = group[framework];
-      if (test == null) continue;
-      totalTime += Duration(microseconds: test.microseconds);
-    }
-
-    if (fastestTotalTime == null || totalTime < fastestTotalTime) {
-      fastestTotalTime = totalTime;
-    }
-  }
+  final results = <String, ScoreResult>{};
 
   // Second pass to calculate scores
   for (final framework in reports.values.first.keys) {
@@ -214,14 +184,10 @@ Map<String, ScoreResult> calculateScores(
       totalTests++;
       if (test == null) continue;
 
-      final baseline = calculateBaseline(group);
       final coefficient = calculateCoefficient(test.stateCaseName);
-      final normalizedScore =
-          calculateNormalizedScore(test.microseconds, baseline, coefficient);
 
       testMetrics[testCase] = TestMetric(
         microseconds: test.microseconds,
-        normalizedScore: normalizedScore,
         coefficient: coefficient,
         status: getTestStatus(coefficient),
       );
@@ -230,13 +196,10 @@ Map<String, ScoreResult> calculateScores(
       totalTime += Duration(microseconds: test.microseconds);
     }
 
-    final overallScore =
-        calculateOverallScore(testMetrics, totalTime, fastestTotalTime!);
     final successRate = passedTests / totalTests;
 
-    scores[framework] = ScoreResult(
+    results[framework] = ScoreResult(
       framework: framework,
-      overallScore: overallScore,
       successRate: successRate,
       totalTests: totalTests,
       passedTests: passedTests,
@@ -245,41 +208,20 @@ Map<String, ScoreResult> calculateScores(
     );
   }
 
-  return scores;
-}
-
-double calculateOverallScore(
-    Map<String, TestMetric> metrics, Duration totalTime, Duration fastestTime) {
-  final baseScore =
-      geometricMean(metrics.values.map((m) => m.normalizedScore).toList());
-  final timeFactor = fastestTime.inMicroseconds / totalTime.inMicroseconds;
-  return baseScore * sqrt(timeFactor);
-}
-
-double geometricMean(List<double> values) {
-  return pow(values.reduce((a, b) => a * b), 1 / values.length).toDouble();
-}
-
-double calculateNormalizedScore(
-  int microseconds,
-  int baseline,
-  double coefficient,
-) {
-  final baseScore = baseline / microseconds;
-  return baseScore * coefficient;
+  return results;
 }
 
 void generateRankingReport(Map<String, ScoreResult> scores) {
   final rankTable = StringBuffer();
-  rankTable
-      .writeln('| Rank | Framework | Score | Success Rate | Tests | Time |');
-  rankTable
-      .writeln('|------|-----------|-------|--------------|-------|------|');
+  rankTable.writeln('| Rank | Framework | Success Rate | Tests | Time |');
+  rankTable.writeln('|------|-----------|--------------|-------|------|');
 
-  final sortedScores = scores.values.toList()
-    ..sort((a, b) => b.overallScore.compareTo(a.overallScore));
+  final successFrameworks = scores.values
+      .where((e) => e.successRate == 1)
+      .toList()
+    ..sort((a, b) => a.totalTime.inMicroseconds - b.totalTime.inMicroseconds);
 
-  for (final (index, score) in sortedScores.indexed) {
+  for (final (index, result) in successFrameworks.indexed) {
     final rank = switch (index) {
       0 => '🥇',
       1 => '🥈',
@@ -287,12 +229,29 @@ void generateRankingReport(Map<String, ScoreResult> scores) {
       _ => '${index + 1}',
     };
 
-    rankTable.writeln('| $rank | ${score.framework} | '
-        '${score.overallScore.toStringAsFixed(2)} | '
-        '${(score.successRate * 100).toStringAsFixed(1)}% | '
-        '${score.passedTests}/${score.totalTests} | '
-        '${formatDuration(score.totalTime)} |');
+    rankTable.writeln('| $rank | ${result.framework} | '
+        '${(result.successRate * 100).toStringAsFixed(1)}% | '
+        '${result.passedTests}/${result.totalTests} | '
+        '${formatDuration(result.totalTime)} |');
   }
 
   updateReadme(rankTable.toString(), 'ranking');
+
+  final failTable = StringBuffer();
+  failTable.writeln('| Framework | Success Rate | Tests | Time |');
+  failTable.writeln('|-----------|--------------|-------|------|');
+
+  final failedFrameworks = scores.values
+      .where((e) => e.successRate < 1)
+      .toList()
+    ..sort((a, b) => a.totalTime.inMicroseconds - b.totalTime.inMicroseconds);
+
+  for (final result in failedFrameworks) {
+    failTable.writeln('| ${result.framework} | '
+        '${(result.successRate * 100).toStringAsFixed(1)}% | '
+        '${result.passedTests}/${result.totalTests} | '
+        '${formatDuration(result.totalTime)} |');
+  }
+
+  updateReadme(failTable.toString(), 'fail');
 }
