@@ -33,10 +33,8 @@ Map<String, Map<String, ({String stateCaseName, int microseconds})>>
     readAllBenchmarkReports() {
   final reports = <String, Map<String, int>>{};
   final benchReportDir = Directory('bench');
-  final files = benchReportDir.listSync()
-    ..sort((a, b) => a.path.compareTo(b.path));
 
-  for (final file in files) {
+  for (final file in benchReportDir.listSync()) {
     if (file is! File) continue;
     final lines = file.readAsLinesSync().skip(2);
     for (final line in lines) {
