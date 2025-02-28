@@ -64,20 +64,28 @@ void generateTestCaseTable(
         reports) {
   final testCaseTable = StringBuffer();
 
+  // 获取所有框架并排序，确保顺序一致
+  final frameworks =
+      reports.values.expand((group) => group.keys).toSet().toList()..sort();
+
   testCaseTable.write('| Test Case | ');
-  testCaseTable.write(reports.values.first.keys.join(' | '));
+  testCaseTable.write(frameworks.join(' | '));
   testCaseTable.writeln(' |');
 
   testCaseTable.write('|---|');
-  testCaseTable.write(
-      Iterable.generate(reports.values.first.length, (_) => '---').join('|'));
+  testCaseTable
+      .write(Iterable.generate(frameworks.length, (_) => '---').join('|'));
   testCaseTable.writeln('|');
 
   for (final MapEntry(key: testCase, value: group) in reports.entries) {
     testCaseTable.write('| $testCase | ');
     testCaseTable.writeAll([
-      for (final (:microseconds, :stateCaseName) in group.values)
-        formatTestResult(microseconds, stateCaseName),
+      for (final framework in frameworks)
+        if (group.containsKey(framework))
+          formatTestResult(
+              group[framework]!.microseconds, group[framework]!.stateCaseName)
+        else
+          'N/A',
     ], ' | ');
     testCaseTable.writeln(' |');
   }
