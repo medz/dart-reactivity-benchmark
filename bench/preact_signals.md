@@ -1,37 +1,37 @@
 | Framework | Test Case | Time (μs) |
 | --- | --- | --- |
-| [preact_signals](https://pub.dev/packages/preact_signals) | avoidablePropagation (success) | 205101 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | broadPropagation (success) | 455543 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | deepPropagation (success) | 182719 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | diamond (success) | 277433 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | mux (success) | 386163 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | repeatedObservers (success) | 38305 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | triangle (success) | 98256 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | unstable (success) | 71819 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | molBench | 490452 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | create_signals | 4519 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_0to1 | 17550 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to1 | 12498 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_2to1 | 18354 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_4to1 | 12900 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1000to1 | 5 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to2 | 19607 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to4 | 30366 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to8 | 5544 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to1000 | 6196 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to1 | 8183 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | update_2to1 | 4057 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | update_4to1 | 2077 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | avoidablePropagation (success) | 204552 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | broadPropagation (success) | 473216 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | deepPropagation (success) | 179368 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | diamond (success) | 278058 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | mux (success) | 385058 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | repeatedObservers (success) | 38163 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | triangle (success) | 98485 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | unstable (success) | 70629 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | molBench | 491273 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | create_signals | 4749 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_0to1 | 24404 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to1 | 14484 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_2to1 | 19687 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_4to1 | 15161 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1000to1 | 4 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to2 | 18209 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to4 | 37536 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to8 | 8947 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | comp_1to1000 | 6144 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to1 | 8170 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | update_2to1 | 4044 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | update_4to1 | 2050 |
 | [preact_signals](https://pub.dev/packages/preact_signals) | update_1000to1 | 20 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to2 | 4201 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to4 | 2025 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to1000 | 852 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | cellx1000 (first: pass, last: pass) | 9453 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | cellx2500 (first: pass, last: pass) | 25310 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | cellx5000 (first: pass, last: pass) | 67023 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 439386 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 282019 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 3494030 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 2597527 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 236517 |
-| [preact_signals](https://pub.dev/packages/preact_signals) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 452945 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to2 | 4202 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to4 | 2051 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | update_1to1000 | 243 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | cellx1000 (first: pass, last: pass) | 10527 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | cellx2500 (first: pass, last: pass) | 35083 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | cellx5000 (first: pass, last: pass) | 89763 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 439551 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 280882 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 3536929 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 2613191 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 232050 |
+| [preact_signals](https://pub.dev/packages/preact_signals) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 453103 |
