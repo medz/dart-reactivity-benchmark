@@ -1,37 +1,37 @@
 | Framework | Test Case | Time (μs) |
 | --- | --- | --- |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | avoidablePropagation (success) | 185034 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | broadPropagation (success) | 352800 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | deepPropagation (success) | 124656 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | diamond (success) | 234962 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | mux (success) | 370119 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | repeatedObservers (success) | 45486 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | triangle (success) | 83706 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | unstable (success) | 60132 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | molBench | 491684 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | create_signals | 21393 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_0to1 | 8272 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to1 | 4438 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_2to1 | 2378 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_4to1 | 8902 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | avoidablePropagation (success) | 185659 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | broadPropagation (success) | 362630 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | deepPropagation (success) | 122545 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | diamond (success) | 233598 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | mux (success) | 380088 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | repeatedObservers (success) | 45572 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | triangle (success) | 86336 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | unstable (success) | 61418 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | molBench | 491463 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | create_signals | 26401 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_0to1 | 7825 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to1 | 4167 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_2to1 | 2252 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_4to1 | 8185 |
 | [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1000to1 | 4 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to2 | 15444 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to4 | 5561 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to8 | 5337 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to1000 | 3569 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to1 | 11297 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | update_2to1 | 5039 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | update_4to1 | 2774 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to2 | 9824 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to4 | 11828 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to8 | 4897 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | comp_1to1000 | 3508 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to1 | 11324 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | update_2to1 | 5013 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | update_4to1 | 2789 |
 | [alien_signals](https://github.com/medz/alien-signals-dart) | update_1000to1 | 10 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to2 | 5561 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to4 | 1992 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to1000 | 50 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | cellx1000 (first: pass, last: pass) | 7658 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | cellx2500 (first: pass, last: pass) | 24747 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | cellx5000 (first: pass, last: pass) | 59038 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 233426 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 189427 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 283521 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 411784 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 188693 |
-| [alien_signals](https://github.com/medz/alien-signals-dart) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 262783 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to2 | 5657 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to4 | 2465 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | update_1to1000 | 39 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | cellx1000 (first: pass, last: pass) | 7271 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | cellx2500 (first: pass, last: pass) | 19578 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | cellx5000 (first: pass, last: pass) | 41811 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 236242 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 177522 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 277316 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 408758 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 192565 |
+| [alien_signals](https://github.com/medz/alien-signals-dart) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 265274 |
