@@ -11,7 +11,7 @@ for dir in frameworks/*/; do
 done
 
 if [ ${#frameworks[@]} -eq 0 ]; then
-  echo "Error: No Dart files found in ./frameworks directory."
+  echo "Error: No framework directories found in frameworks directory."
   exit 1
 fi
 
@@ -38,11 +38,11 @@ do
 
   # compile to native
   echo "Compiling $framework to native..."
-  dart compile exe "frameworks/$framework.dart" -o "frameworks/$framework" || exit 1
+  dart compile exe "main.dart" -o "$framework" || exit 1
 
   echo "Running benchmark for $framework..."
-  { ./frameworks/$framework | tee  bench/$framework.md; } 2>&1;
-  rm "frameworks/$framework"
+  { ./$framework | tee  "$cwd/bench/$framework.md"; } 2>&1;
+  rm "$framework"
   if [ $? -ne 0 ]; then
     echo "Error running benchmark for $framework"
     exit 1

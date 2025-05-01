@@ -6,7 +6,7 @@ import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 final class _SolidartReactiveFramework extends ReactiveFramework {
   const _SolidartReactiveFramework()
-      : super('[solidart(v1)](https://github.com/nank1ro/solidart/tree/dev)');
+      : super('[solidart(v1)](https://github.com/nank1ro/solidart)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {
