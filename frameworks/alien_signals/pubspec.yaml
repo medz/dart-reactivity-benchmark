@@ -1,0 +1,7 @@
+name: alien_signals_latest
+environment:
+  sdk: ^3.6.0
+dependencies:
+  alien_signals: ^0.4.0
+  reactivity_benchmark:
+    path: ../../
