@@ -1,9 +1,14 @@
 #!/bin/bash
 
-while IFS= read -r -d $'\0' framework_file; do
-  framework=$(basename "$framework_file" .dart)
+# Initialize frameworks array
+frameworks=()
+
+# Get list of framework directories
+for dir in frameworks/*/; do
+  # Extract just the directory name
+  framework=$(basename "$dir")
   frameworks+=("$framework")
-done < <(find ./frameworks -maxdepth 1 -type f -name "*.dart" -print0)
+done
 
 if [ ${#frameworks[@]} -eq 0 ]; then
   echo "Error: No Dart files found in ./frameworks directory."
@@ -22,6 +27,15 @@ do
   echo "==================== $framework ===================="
   echo "$(date)"
 
+  # Current directory
+  cwd=$(pwd)
+
+  # Enter framework directory
+  cd "frameworks/$framework"
+
+  # Install deps
+  dart pub get
+
   # compile to native
   echo "Compiling $framework to native..."
   dart compile exe "frameworks/$framework.dart" -o "frameworks/$framework" || exit 1
@@ -33,4 +47,7 @@ do
     echo "Error running benchmark for $framework"
     exit 1
   fi
+
+  # Back to root directory
+  cd "$cwd"
 done
