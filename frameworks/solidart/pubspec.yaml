@@ -1,7 +1,7 @@
-name: alien_signals_0_2
+name: _
 environment:
   sdk: ^3.6.0
 dependencies:
-  alien_signals: 0.2.4
+  solidart: ^2.0.0-dev.5
   reactivity_benchmark:
     path: ../../

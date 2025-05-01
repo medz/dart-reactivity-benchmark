@@ -2,6 +2,6 @@ name: _
 environment:
   sdk: ^3.6.0
 dependencies:
-  alien_signals: ^0.4.0
+  reactter: ^8.0.0
   reactivity_benchmark:
     path: ../../

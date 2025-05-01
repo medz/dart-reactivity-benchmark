@@ -10,11 +10,4 @@ environment:
   sdk: ^3.6.0
 
 dev_dependencies:
-  lints: ^5.0.0
-  solidart: ^2.0.0-dev.5
-  signals_core: ^6.0.2
-  preact_signals: ^1.8.3
-  state_beacon_core: ^1.0.0
-  mobx: ^2.5.0
-  riverpod: ^2.6.1
-  reactter: ^8.0.0
+  lints: ^5.1.1
