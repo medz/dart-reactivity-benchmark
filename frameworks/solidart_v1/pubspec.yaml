@@ -2,6 +2,6 @@ name: _
 environment:
   sdk: ^3.6.0
 dependencies:
-  solidart: ^1.5.4
+  solidart: ^2.0.0
   reactivity_benchmark:
     path: ../../
