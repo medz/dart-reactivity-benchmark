@@ -1,37 +1,37 @@
 | Framework | Test Case | Time (μs) |
 | --- | --- | --- |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | avoidablePropagation (success) | 278542 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | broadPropagation (success) | 509615 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | deepPropagation (success) | 171373 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | diamond (success) | 349931 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | mux (success) | 442984 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | repeatedObservers (success) | 81866 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | triangle (success) | 118068 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | unstable (success) | 99301 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | molBench | 492895 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | create_signals | 95260 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_0to1 | 35746 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to1 | 53514 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_2to1 | 28840 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_4to1 | 19037 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1000to1 | 22 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to2 | 37868 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to4 | 25816 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to8 | 28242 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to1000 | 17169 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to1 | 16081 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_2to1 | 7887 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_4to1 | 4023 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | avoidablePropagation (success) | 276398 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | broadPropagation (success) | 502212 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | deepPropagation (success) | 167972 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | diamond (success) | 354415 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | mux (success) | 443056 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | repeatedObservers (success) | 81617 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | triangle (success) | 118286 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | unstable (success) | 97167 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | molBench | 494889 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | create_signals | 79794 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_0to1 | 29042 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to1 | 41086 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_2to1 | 27745 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_4to1 | 14055 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1000to1 | 21 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to2 | 42071 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to4 | 23080 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to8 | 25220 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | comp_1to1000 | 17002 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to1 | 16114 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_2to1 | 7826 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_4to1 | 3983 |
 | [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1000to1 | 40 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to2 | 7865 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to4 | 4056 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to1000 | 170 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | cellx1000 (first: pass, last: pass) | 14954 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | cellx2500 (first: pass, last: pass) | 50646 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | cellx5000 (first: pass, last: pass) | 146109 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 363301 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 245257 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 473722 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 595360 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 256026 |
-| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 384702 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to2 | 8056 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to4 | 4047 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | update_1to1000 | 171 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | cellx1000 (first: pass, last: pass) | 16528 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | cellx2500 (first: pass, last: pass) | 76920 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | cellx5000 (first: pass, last: pass) | 194305 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 360830 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 248272 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 477373 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 585404 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 255346 |
+| [solidart(2.0-dev)](https://github.com/nank1ro/solidart/tree/dev) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 393395 |
