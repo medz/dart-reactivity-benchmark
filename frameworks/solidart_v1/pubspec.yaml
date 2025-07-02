@@ -1,7 +1,0 @@
-name: _
-environment:
-  sdk: ^3.6.0
-dependencies:
-  solidart: ^1.5.4
-  reactivity_benchmark:
-    path: ../../
