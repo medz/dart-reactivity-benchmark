@@ -6,7 +6,7 @@ import 'package:reactivity_benchmark/utils/create_signal.dart';
 
 final class AlientSignalsReactiveFramework extends ReactiveFramework {
   const AlientSignalsReactiveFramework()
-      : super('alien_signals: `^0.4.2` (prefer-inline)');
+      : super('alien_signals: `>=0.4.2, ` (prefer-inline)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {
