@@ -1,34 +1,34 @@
 | Framework | Test Case | Time (μs) |
 | --- | --- | --- |
-| [riverpod](https://github.com/rrousselGit/riverpod) | avoidablePropagation (success) | 1389660 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | broadPropagation (fail) | 84538 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | deepPropagation (fail) | 2034310 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | diamond (fail) | 2936375 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | mux (fail) | 559308 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | repeatedObservers (fail) | 383280 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | triangle (fail) | 964777 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | unstable (fail) | 622732 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | molBench | 11470 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | create_signals | 24172 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_0to1 | 14119 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to1 | 23190 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_2to1 | 24666 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_4to1 | 6854 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1000to1 | 5 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to2 | 13053 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to4 | 25842 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to8 | 6954 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to1000 | 6098 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to1 | 83977 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_2to1 | 41353 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_4to1 | 20292 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_1000to1 | 172 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to2 | 42975 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to4 | 20656 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to1000 | 123 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 2226926 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: fail) | 1525676 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: fail) | 2570569 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 4074911 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 1393179 |
-| [riverpod](https://github.com/rrousselGit/riverpod) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: fail) | 1873812 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | avoidablePropagation (success) | 1372183 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | broadPropagation (fail) | 83798 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | deepPropagation (fail) | 1984533 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | diamond (fail) | 2595160 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | mux (fail) | 570032 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | repeatedObservers (fail) | 386149 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | triangle (fail) | 928323 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | unstable (fail) | 617966 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | molBench | 11680 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | create_signals | 23714 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_0to1 | 13059 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to1 | 26843 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_2to1 | 23654 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_4to1 | 7095 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1000to1 | 4 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to2 | 11481 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to4 | 23887 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to8 | 5026 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | comp_1to1000 | 4042 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to1 | 87522 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_2to1 | 43747 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_4to1 | 20426 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_1000to1 | 214 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to2 | 41543 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to4 | 20348 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | update_1to1000 | 141 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 2224135 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: fail) | 1494230 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: fail) | 2482625 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 4183429 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 1564602 |
+| [riverpod](https://github.com/rrousselGit/riverpod) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: fail) | 1757211 |
