@@ -1,37 +1,37 @@
 | Framework | Test Case | Time (μs) |
 | --- | --- | --- |
-| [signals](https://github.com/rodydavis/signals.dart) | avoidablePropagation (success) | 214730 |
-| [signals](https://github.com/rodydavis/signals.dart) | broadPropagation (success) | 449170 |
-| [signals](https://github.com/rodydavis/signals.dart) | deepPropagation (success) | 174750 |
-| [signals](https://github.com/rodydavis/signals.dart) | diamond (success) | 279958 |
-| [signals](https://github.com/rodydavis/signals.dart) | mux (success) | 446659 |
-| [signals](https://github.com/rodydavis/signals.dart) | repeatedObservers (success) | 45237 |
-| [signals](https://github.com/rodydavis/signals.dart) | triangle (success) | 100538 |
-| [signals](https://github.com/rodydavis/signals.dart) | unstable (success) | 79172 |
-| [signals](https://github.com/rodydavis/signals.dart) | molBench | 486777 |
-| [signals](https://github.com/rodydavis/signals.dart) | create_signals | 25975 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_0to1 | 11814 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_1to1 | 18197 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_2to1 | 9320 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_4to1 | 6856 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_1000to1 | 4 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_1to2 | 13243 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_1to4 | 10636 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_1to8 | 6368 |
-| [signals](https://github.com/rodydavis/signals.dart) | comp_1to1000 | 4247 |
-| [signals](https://github.com/rodydavis/signals.dart) | update_1to1 | 8997 |
-| [signals](https://github.com/rodydavis/signals.dart) | update_2to1 | 4499 |
-| [signals](https://github.com/rodydavis/signals.dart) | update_4to1 | 2266 |
+| [signals](https://github.com/rodydavis/signals.dart) | avoidablePropagation (success) | 206065 |
+| [signals](https://github.com/rodydavis/signals.dart) | broadPropagation (success) | 451429 |
+| [signals](https://github.com/rodydavis/signals.dart) | deepPropagation (success) | 174019 |
+| [signals](https://github.com/rodydavis/signals.dart) | diamond (success) | 278149 |
+| [signals](https://github.com/rodydavis/signals.dart) | mux (success) | 403335 |
+| [signals](https://github.com/rodydavis/signals.dart) | repeatedObservers (success) | 44495 |
+| [signals](https://github.com/rodydavis/signals.dart) | triangle (success) | 110049 |
+| [signals](https://github.com/rodydavis/signals.dart) | unstable (success) | 80261 |
+| [signals](https://github.com/rodydavis/signals.dart) | molBench | 486611 |
+| [signals](https://github.com/rodydavis/signals.dart) | create_signals | 27401 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_0to1 | 12190 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_1to1 | 19492 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_2to1 | 16548 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_4to1 | 9634 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_1000to1 | 5 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_1to2 | 15908 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_1to4 | 7229 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_1to8 | 6336 |
+| [signals](https://github.com/rodydavis/signals.dart) | comp_1to1000 | 4258 |
+| [signals](https://github.com/rodydavis/signals.dart) | update_1to1 | 8886 |
+| [signals](https://github.com/rodydavis/signals.dart) | update_2to1 | 4478 |
+| [signals](https://github.com/rodydavis/signals.dart) | update_4to1 | 2220 |
 | [signals](https://github.com/rodydavis/signals.dart) | update_1000to1 | 22 |
-| [signals](https://github.com/rodydavis/signals.dart) | update_1to2 | 6384 |
-| [signals](https://github.com/rodydavis/signals.dart) | update_1to4 | 2256 |
-| [signals](https://github.com/rodydavis/signals.dart) | update_1to1000 | 41 |
-| [signals](https://github.com/rodydavis/signals.dart) | cellx1000 (first: pass, last: pass) | 9693 |
-| [signals](https://github.com/rodydavis/signals.dart) | cellx2500 (first: pass, last: pass) | 31496 |
-| [signals](https://github.com/rodydavis/signals.dart) | cellx5000 (first: pass, last: pass) | 62018 |
-| [signals](https://github.com/rodydavis/signals.dart) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 517048 |
-| [signals](https://github.com/rodydavis/signals.dart) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 278877 |
-| [signals](https://github.com/rodydavis/signals.dart) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 3759666 |
-| [signals](https://github.com/rodydavis/signals.dart) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 3421467 |
-| [signals](https://github.com/rodydavis/signals.dart) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 226867 |
-| [signals](https://github.com/rodydavis/signals.dart) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 477679 |
+| [signals](https://github.com/rodydavis/signals.dart) | update_1to2 | 4475 |
+| [signals](https://github.com/rodydavis/signals.dart) | update_1to4 | 2221 |
+| [signals](https://github.com/rodydavis/signals.dart) | update_1to1000 | 42 |
+| [signals](https://github.com/rodydavis/signals.dart) | cellx1000 (first: pass, last: pass) | 10166 |
+| [signals](https://github.com/rodydavis/signals.dart) | cellx2500 (first: pass, last: pass) | 37874 |
+| [signals](https://github.com/rodydavis/signals.dart) | cellx5000 (first: pass, last: pass) | 80368 |
+| [signals](https://github.com/rodydavis/signals.dart) | 10x5 - 2 sources - read 20.0% (simple, sum: pass, count: pass) | 508248 |
+| [signals](https://github.com/rodydavis/signals.dart) | 10x10 - 6 sources - dynamic - read 20.0% (dynamic, sum: pass, count: pass) | 280861 |
+| [signals](https://github.com/rodydavis/signals.dart) | 1000x12 - 4 sources - dynamic (large, sum: pass, count: pass) | 3950281 |
+| [signals](https://github.com/rodydavis/signals.dart) | 1000x5 - 25 sources (wide dense, sum: pass, count: pass) | 3393270 |
+| [signals](https://github.com/rodydavis/signals.dart) | 5x500 - 3 sources (deep, sum: pass, count: pass) | 223422 |
+| [signals](https://github.com/rodydavis/signals.dart) | 100x15 - 6 sources - dynamic (very dynamic, sum: pass, count: pass) | 478119 |
