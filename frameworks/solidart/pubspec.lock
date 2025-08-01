@@ -5,10 +5,10 @@ packages:
     dependency: transitive
     description:
       name: alien_signals
-      sha256: f76d6e0bd59d2fa8a6ecbff8f784f04f784068fb70886ec0e21e1280624cd9d7
+      sha256: b0271c1ddcdd715f23d28d2ee1adee3ce60c928e74bd2961db8ee60bd9115299
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.4"
+    version: "0.5.1"
   collection:
     dependency: transitive
     description:
@@ -36,9 +36,9 @@ packages:
     dependency: "direct main"
     description:
       name: solidart
-      sha256: "74c2de5f1a4b0270462e6b383e9a8589cb9436138117d693d3904db8d9a656b5"
+      sha256: "8aabe0db4039a25a077bb9b96431012ce4126077aad881a050a30c10144382c8"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
+    version: "2.1.1+1"
 sdks:
   dart: ">=3.6.0 <4.0.0"
