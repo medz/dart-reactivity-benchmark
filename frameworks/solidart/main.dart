@@ -42,5 +42,6 @@ void main() {
   solidart.SolidartConfig.trackPreviousValue = false;
   solidart.SolidartConfig.autoDispose = false;
   solidart.SolidartConfig.equals = true;
+  solidart.SolidartConfig.assertSignalBuilderWithoutDependencies = false;
   runFrameworkBench(const _SolidartReactiveFramework());
 }
