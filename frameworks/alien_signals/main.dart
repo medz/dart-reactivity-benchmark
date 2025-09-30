@@ -11,7 +11,7 @@ final class AlientSignalsReactiveFramework extends ReactiveFramework {
   @override
   Computed<T> computed<T>(T Function() fn) {
     final computed = alien.computed<T>((_) => fn());
-    return createComputed(computed);
+    return createComputed(() => computed.value);
   }
 
   @override
@@ -22,7 +22,9 @@ final class AlientSignalsReactiveFramework extends ReactiveFramework {
   @override
   Signal<T> signal<T>(T value) {
     final signal = alien.signal(value);
-    return createSignal(signal, signal);
+    return createSignal(() => signal.value, (value) {
+      signal.value = value;
+    });
   }
 
   @override
