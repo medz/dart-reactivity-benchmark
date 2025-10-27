@@ -2,6 +2,6 @@ name: _
 environment:
   sdk: ^3.6.0
 dependencies:
-  riverpod: ^2.6.1
+  riverpod: 3.0.3
   reactivity_benchmark:
     path: ../../
