@@ -7,12 +7,12 @@ import 'package:reactivity_benchmark/utils/create_signal.dart';
 final class AlientSignalsReactiveFramework extends ReactiveFramework {
   const AlientSignalsReactiveFramework()
       : super(
-            '[alien_signals 2.0 beta](https://github.com/medz/alien-signals-dart)');
+            '[alien_signals 1.0](https://github.com/medz/alien-signals-dart)');
 
   @override
   Computed<T> computed<T>(T Function() fn) {
-    final c = alien.computed<T>((_) => fn());
-    return createComputed(c);
+    final computed = alien.computed<T>((_) => fn());
+    return createComputed(computed.call);
   }
 
   @override
@@ -22,8 +22,8 @@ final class AlientSignalsReactiveFramework extends ReactiveFramework {
 
   @override
   Signal<T> signal<T>(T value) {
-    final s = alien.signal(value);
-    return createSignal(s, (value) => s(value, true));
+    final signal = alien.signal(value);
+    return createSignal(signal.call, (value) => signal(value, true));
   }
 
   @override
