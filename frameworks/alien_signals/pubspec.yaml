@@ -2,7 +2,6 @@ name: _
 environment:
   sdk: ^3.6.0
 dependencies:
-  alien_signals:
-    path: ../../../alien-signals-dart
+  alien_signals: ^2.0.0-rc.2
   reactivity_benchmark:
     path: ../../
