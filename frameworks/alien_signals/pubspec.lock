@@ -4,10 +4,9 @@ packages:
   alien_signals:
     dependency: "direct main"
     description:
-      name: alien_signals
-      sha256: "9fd1d7fe8d869f8d3645ea8800a2f3d1102f488b5d8cead7ab1a94fd871dedde"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../../alien-signals-dart"
+      relative: true
+    source: path
     version: "2.0.0-beta.3"
   reactivity_benchmark:
     dependency: "direct main"

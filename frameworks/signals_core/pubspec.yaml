@@ -1,7 +1,0 @@
-name: _
-environment:
-  sdk: ^3.6.0
-dependencies:
-  signals_core: ^6.0.2
-  reactivity_benchmark:
-    path: ../../
