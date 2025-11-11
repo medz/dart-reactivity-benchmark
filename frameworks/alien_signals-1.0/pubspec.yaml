@@ -1,7 +1,0 @@
-name: _
-environment:
-  sdk: ^3.6.0
-dependencies:
-  alien_signals: ^1.0.3
-  reactivity_benchmark:
-    path: ../../
