@@ -17,6 +17,7 @@ final class _StateBeaconReactiveFramework extends ReactiveFramework {
   @override
   void effect(void Function() fn) {
     state_beacon.Beacon.effect(() => fn());
+    state_beacon.BeaconScheduler.flush();
   }
 
   @override
@@ -28,6 +29,7 @@ final class _StateBeaconReactiveFramework extends ReactiveFramework {
   @override
   void withBatch<T>(T Function() fn) {
     fn();
+    state_beacon.BeaconScheduler.flush();
   }
 
   @override
