@@ -2,6 +2,9 @@
 
 Benchmark comparing different standalone Dart reactivity/signals frameworks.
 
+> [!NOTE]
+> This benchmark is primarily for **entertainment purposes** and should not be considered a rigorous scientific comparison. The test results may be influenced by various factors such as testing environment, hardware, and specific implementation details. Please use the results as a casual reference only and conduct your own testing in your actual use cases.
+
 ## Ranking
 
 <!-- ranking start -->
