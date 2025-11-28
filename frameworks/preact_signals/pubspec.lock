@@ -13,10 +13,10 @@ packages:
     dependency: "direct main"
     description:
       name: preact_signals
-      sha256: a5b445796a02244b85fa43d79a7030fbfbbb08f7c48277ee93c636140a8fb2e0
+      sha256: "8bf3cec7fe784d224f1a1132ae7b2f9f3852609046ccb71c4f450a13dd811abf"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
+    version: "1.9.3"
   reactivity_benchmark:
     dependency: "direct main"
     description:
