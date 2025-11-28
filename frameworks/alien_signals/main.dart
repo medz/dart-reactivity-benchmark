@@ -22,7 +22,7 @@ final class AlientSignalsReactiveFramework extends ReactiveFramework {
   @override
   Signal<T> signal<T>(T value) {
     final s = alien.signal(value);
-    return createSignal(s.call, s.call);
+    return createSignal(s.call, s.set);
   }
 
   @override

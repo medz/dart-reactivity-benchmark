@@ -5,10 +5,10 @@ packages:
     dependency: "direct main"
     description:
       name: alien_signals
-      sha256: "625c79d0157846955f71d37dd2509849abbd3e6cbdf43c30113eaa4a5d146371"
+      sha256: eaae119a45c67854299e2e6006018c711828dee0a447801082f81fa918fe9a38
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0-rc.3"
+    version: "2.0.1"
   reactivity_benchmark:
     dependency: "direct main"
     description:
