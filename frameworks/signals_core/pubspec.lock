@@ -13,10 +13,10 @@ packages:
     dependency: transitive
     description:
       name: preact_signals
-      sha256: a5b445796a02244b85fa43d79a7030fbfbbb08f7c48277ee93c636140a8fb2e0
+      sha256: "8bf3cec7fe784d224f1a1132ae7b2f9f3852609046ccb71c4f450a13dd811abf"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
+    version: "1.9.3"
   reactivity_benchmark:
     dependency: "direct main"
     description:
@@ -28,9 +28,9 @@ packages:
     dependency: "direct main"
     description:
       name: signals_core
-      sha256: "5668ff1fb953fe48c88b03d50d43c5fe128cd7c831b932a4157f5f6be868b80f"
+      sha256: "10e527cda3c400703e4156da16aeaea274644ecb7db11abeec7dc7cc9bec9abd"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.2"
+    version: "6.2.0"
 sdks:
   dart: ">=3.6.0 <4.0.0"
